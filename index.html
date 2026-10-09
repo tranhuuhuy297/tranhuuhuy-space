@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>tranhuuhuy — AI answers & automation over your company docs</title>
+  <meta name="description" content="tranhuuhuy uses Claude to answer questions over your company documents, summarize anything, and run tool-calling agents that automate repetitive workflows." />
+  <link rel="canonical" href="https://tranhuuhuy.space/" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tranhuuhuy.space/" />
+  <meta property="og:title" content="tranhuuhuy — AI over your company docs" />
+  <meta property="og:description" content="Grounded answers, summaries and workflow agents powered by Claude." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="/" class="logo"><img src="/favicon.svg" alt="" width="28" height="28" /> tranhuuhuy</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#usecases">Use cases</a>
+        <a href="#security">Security</a>
+        <a href="#contact" class="btn btn--sm">Book a demo</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div>
+          <span class="pill">Powered by Claude</span>
+          <h1>Your company knowledge,<br /><span class="grad">answering itself.</span></h1>
+          <p class="lead">tranhuuhuy connects to your documents and tools, gives employees cited answers in seconds, summarizes anything, and runs AI agents that take repetitive workflows off your team's plate.</p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn">Book a demo</a>
+            <a href="#how" class="btn btn--ghost">See how it works →</a>
+          </div>
+          <ul class="hero__stats">
+            <li><b>Cited</b><span>every answer links to its source</span></li>
+            <li><b>Minutes</b><span>to connect Drive, Notion, Confluence</span></li>
+            <li><b>Private</b><span>your data never trains models</span></li>
+          </ul>
+        </div>
+
+        <div class="chat" aria-hidden="true">
+          <div class="chat__bar"><i></i><i></i><i></i><span>tranhuuhuy assistant</span></div>
+          <div class="chat__body" id="chatBody"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos">
+      <div class="container">
+        <p>Connects to the tools you already use</p>
+        <div class="logos__row">
+          <span>Google Drive</span><span>Notion</span><span>Confluence</span><span>SharePoint</span><span>Slack</span><span>Jira</span><span>PDF / DOCX</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section__title">One assistant. Three superpowers.</h2>
+        <p class="section__sub">Built on Claude for long-context reasoning, accurate retrieval, and reliable tool use.</p>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="card__icon">🔎</div>
+            <h3>Answers over your docs</h3>
+            <p>Retrieval-augmented answers grounded in your policies, contracts, wikis and tickets — with citations, so people can trust and verify.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">📝</div>
+            <h3>Summaries in seconds</h3>
+            <p>Turn 80-page reports, meeting transcripts and long email threads into decisions, risks and action items.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card__icon">⚙️</div>
+            <h3>Workflow agents</h3>
+            <p>Tool-calling agents that fill forms, triage tickets, draft replies, update CRMs and hand off to humans when it matters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Live in a week, not a quarter</h2>
+        <ol class="steps">
+          <li class="reveal"><span>1</span><h3>Connect</h3><p>Plug in your document sources and tools. Permissions are mirrored, so people only see what they're allowed to.</p></li>
+          <li class="reveal"><span>2</span><h3>Index</h3><p>We chunk, embed and keep your knowledge in sync automatically as documents change.</p></li>
+          <li class="reveal"><span>3</span><h3>Ask & automate</h3><p>Use the web app, Slack, or our API. Define agents for the workflows your team repeats every day.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="usecases" class="section">
+      <div class="container">
+        <h2 class="section__title">Where teams use it</h2>
+        <div class="usecases">
+          <div class="uc reveal"><h3>Customer support</h3><p>Draft accurate replies from your help center and past tickets; auto-triage and route.</p></div>
+          <div class="uc reveal"><h3>HR & onboarding</h3><p>New hires get instant answers on policies, benefits and processes — 24/7.</p></div>
+          <div class="uc reveal"><h3>Sales & ops</h3><p>Summarize calls, update CRM fields, and generate proposals from approved templates.</p></div>
+          <div class="uc reveal"><h3>Legal & finance</h3><p>Search contracts by clause, compare versions, and extract key terms into spreadsheets.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="security" class="section section--alt">
+      <div class="container security">
+        <div>
+          <h2 class="section__title left">Enterprise-grade by default</h2>
+          <p class="section__sub left">Your documents stay yours. We never use customer data to train models.</p>
+        </div>
+        <ul class="checks">
+          <li>Permission-aware retrieval (respects source ACLs)</li>
+          <li>Encryption in transit and at rest</li>
+          <li>SSO / SAML and role-based access</li>
+          <li>Audit logs for every answer and agent action</li>
+          <li>Human-in-the-loop approval for sensitive actions</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container cta">
+        <h2>See it on your own documents</h2>
+        <p>Tell us about your team — we'll set up a free pilot on a sample of your data.</p>
+        <form class="cta__form" id="contactForm">
+          <input type="email" name="email" placeholder="you@company.com" required />
+          <input type="text" name="company" placeholder="Company" />
+          <button class="btn" type="submit">Request a demo</button>
+        </form>
+        <p class="cta__note" id="formNote"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> tranhuuhuy</span>
+      <span><a href="mailto:tranhuuhuy297@gmail.com">tranhuuhuy297@gmail.com</a></span>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
